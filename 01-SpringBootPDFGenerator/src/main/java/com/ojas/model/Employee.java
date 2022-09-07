@@ -2,23 +2,18 @@ package com.ojas.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
-@Entity
+/*
+this class decbribes about db mapping
+*/
+@Entity 
 public class Employee {
-	
-	
-	
-
 		@Id
 		private Integer empId;
 		private String empName;
 		private Double empSal;
 		private String empDept;
-
 		public Employee() {
-
 		}
-
 		public Employee(Integer empId, String empName, Double empSal, String empDept) {
 			super();
 			this.empId = empId;
@@ -26,7 +21,6 @@ public class Employee {
 			this.empSal = empSal;
 			this.empDept = empDept;
 		}
-
 		public Integer getEmpId() {
 			return empId;
 		}
